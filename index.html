@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/ -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lei de Responsabilidade Fiscal – Material de Estudo para Concursos</title>
+  <script src="./Lei de Responsabilidade Fiscal – Material de Estudo para Concursos_files/chart.umd.min.js.transferir"></script>
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #1a3c5e;
+      --secondary: #2e7d32;
+      --accent: #f57c00;
+      --danger: #c62828;
+      --info: #0277bd;
+      --light-bg: #f0f4f8;
+      --card-bg: #ffffff;
+      --text: #1c1c2e;
+      --text-muted: #5a6a7a;
+      --border: #d0dce8;
+      --radius: 12px;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 30px rgba(0,0,0,0.14);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, #0d2137 0%, #1a3c5e 50%, #1565c0 100%);
+      color: #fff;
+      padding: 60px 20px 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 50px;
+      padding: 6px 20px;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    header h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    header h1 span { color: #ffd54f; }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+    .header-stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .header-stat {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 10px;
+      padding: 14px 24px;
+      text-align: center;
+    }
+    .header-stat .num { font-size: 1.8rem; font-weight: 800; color: #ffd54f; }
+    .header-stat .label { font-size: 0.78rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* ===== NAV ===== */
+    nav {
+      background: var(--primary);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      overflow-x: auto;
+      padding: 0 20px;
+      gap: 4px;
+      scrollbar-width: none;
+    }
+    nav ul::-webkit-scrollbar { display: none; }
+    nav ul li a {
+      display: block;
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      padding: 14px 16px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+    }
+    nav ul li a:hover, nav ul li a.active {
+      color: #fff;
+      border-bottom-color: #ffd54f;
+    }
+
+    /* ===== CONTAINER ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* ===== SECTIONS ===== */
+    section { padding: 50px 0; }
+    section:nth-child(even) { background: #fff; }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title .icon {
+      width: 42px; height: 42px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+      padding-left: 54px;
+    }
+
+    /* ===== CARDS ===== */
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .card-grid { display: grid; gap: 20px; }
+    .card-grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .card-grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card-grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+    /* ===== PILARES ===== */
+    .pilar-card {
+      border-radius: var(--radius);
+      padding: 28px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .pilar-card::after {
+      content: attr(data-icon);
+      position: absolute;
+      right: 16px; bottom: 10px;
+      font-size: 4rem;
+      opacity: 0.15;
+    }
+    .pilar-card h3 { font-size: 1.1rem; margin-bottom: 10px; font-weight: 700; }
+    .pilar-card p { font-size: 0.9rem; opacity: 0.9; line-height: 1.6; }
+    .pilar-planejamento { background: linear-gradient(135deg, #1565c0, #1976d2); }
+    .pilar-transparencia { background: linear-gradient(135deg, #2e7d32, #388e3c); }
+    .pilar-controle { background: linear-gradient(135deg, #e65100, #f57c00); }
+    .pilar-responsabilidade { background: linear-gradient(135deg, #6a1b9a, #8e24aa); }
+
+    /* ===== LIMITES TABLE ===== */
+    .table-wrapper { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    thead { background: var(--primary); color: #fff; }
+    thead th { padding: 14px 18px; text-align: left; font-size: 0.9rem; font-weight: 600; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+    tbody tr:hover { background: #f0f7ff; }
+    tbody td { padding: 13px 18px; font-size: 0.9rem; }
+    .badge-limit {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .badge-50 { background: #e3f2fd; color: #1565c0; }
+    .badge-60 { background: #e8f5e9; color: #2e7d32; }
+    .badge-prudencial { background: #fff3e0; color: #e65100; }
+    .badge-alerta { background: #fce4ec; color: #c62828; }
+
+    /* ===== CHART SECTION ===== */
+    .chart-container {
+      position: relative;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    .chart-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+
+    /* ===== ACCORDION ===== */
+    .accordion { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .accordion-item { border-bottom: 1px solid var(--border); background: #fff; }
+    .accordion-item:last-child { border-bottom: none; }
+    .accordion-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 18px 24px;
+      text-align: left;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+    .accordion-header:hover { background: #f0f7ff; }
+    .accordion-header.open { background: #e8f0fe; color: #1a3c5e; }
+    .accordion-header .chevron { transition: transform 0.3s; font-size: 1.1rem; }
+    .accordion-header.open .chevron { transform: rotate(180deg); }
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .accordion-body.open { max-height: 1000px; }
+    .accordion-content { padding: 16px 24px 24px; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; }
+    .accordion-content ul { margin-left: 20px; margin-top: 8px; }
+    .accordion-content li { margin-bottom: 6px; }
+    .accordion-content strong { color: var(--text); }
+
+    /* ===== TIMELINE ===== */
+    .timeline { position: relative; padding-left: 40px; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 16px; top: 0; bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary), var(--info));
+      border-radius: 3px;
+    }
+    .timeline-item { position: relative; margin-bottom: 32px; }
+    .timeline-dot {
+      position: absolute;
+      left: -32px; top: 4px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px var(--primary);
+    }
+    .timeline-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px 24px;
+    }
+    .timeline-card h4 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+    .timeline-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
+    .timeline-tag {
+      display: inline-block;
+      background: #e8f0fe;
+      color: var(--primary);
+      border-radius: 50px;
+      padding: 3px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    /* ===== QUIZ ===== */
+    #quiz-section { background: linear-gradient(135deg, #f0f4f8, #e8f0fe); }
+    .quiz-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .quiz-progress {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .quiz-progress-bar {
+      flex: 1;
+      height: 8px;
+      background: var(--border);
+      border-radius: 50px;
+      overflow: hidden;
+    }
+    .quiz-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--info));
+      border-radius: 50px;
+      transition: width 0.4s ease;
+    }
+    .quiz-counter { font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
+    .quiz-question { font-size: 1.05rem; font-weight: 600; color: var(--primary); margin-bottom: 24px; line-height: 1.6; }
+    .quiz-options { display: flex; flex-direction: column; gap: 12px; }
+    .quiz-option {
+      background: var(--light-bg);
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      text-align: left;
+    }
+    .quiz-option:hover { border-color: var(--primary); background: #e8f0fe; }
+    .quiz-option.correct { border-color: var(--secondary); background: #e8f5e9; color: #1b5e20; }
+    .quiz-option.wrong { border-color: var(--danger); background: #ffebee; color: #b71c1c; }
+    .quiz-option.disabled { pointer-events: none; opacity: 0.7; }
+    .quiz-feedback {
+      margin-top: 18px;
+      padding: 14px 18px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .quiz-feedback.show { display: block; }
+    .quiz-feedback.correct { background: #e8f5e9; color: #1b5e20; border-left: 4px solid var(--secondary); }
+    .quiz-feedback.wrong { background: #ffebee; color: #b71c1c; border-left: 4px solid var(--danger); }
+    .quiz-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; }
+    .btn {
+      padding: 12px 28px;
+      border-radius: 8px;
+      border: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #0d2137; transform: translateY(-1px); }
+    .btn-secondary { background: var(--border); color: var(--text); }
+    .btn-secondary:hover { background: #b0bec5; }
+    .quiz-result {
+      text-align: center;
+      display: none;
+    }
+    .quiz-result.show { display: block; }
+    .quiz-score {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 16px 0;
+    }
+    .quiz-score-label { font-size: 1rem; color: var(--text-muted); }
+    .quiz-stars { font-size: 2rem; margin: 12px 0; }
+
+    /* ===== GLOSSARIO ===== */
+    .glossario-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .glossario-item {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      border-left: 4px solid var(--primary);
+    }
+    .glossario-item h4 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+    .glossario-item p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ===== MAPA MENTAL ===== */
+    .mapa-mental {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      overflow-x: auto;
+    }
+    .mapa-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .mapa-node-main {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 12px;
+      padding: 16px 32px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 20px rgba(26,60,94,0.3);
+    }
+    .mapa-branches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      width: 100%;
+    }
+    .mapa-branch {
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .mapa-branch ul {
+      list-style: none;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 0.78rem;
+      opacity: 0.9;
+    }
+    .mapa-branch li { margin-bottom: 4px; }
+    .b1 { background: linear-gradient(135deg, #1565c0, #1976d2); }
+    .b2 { background: linear-gradient(135deg, #2e7d32, #388e3c); }
+    .b3 { background: linear-gradient(135deg, #e65100, #f57c00); }
+    .b4 { background: linear-gradient(135deg, #6a1b9a, #8e24aa); }
+    .b5 { background: linear-gradient(135deg, #00695c, #00897b); }
+    .b6 { background: linear-gradient(135deg, #c62828, #e53935); }
+
+    /* ===== HIGHLIGHT BOXES ===== */
+    .highlight-box {
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 16px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .highlight-box .hl-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .highlight-box .hl-content h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .highlight-box .hl-content p { font-size: 0.88rem; line-height: 1.7; }
+    .hl-warning { background: #fff8e1; border-left: 4px solid #f9a825; }
+    .hl-warning .hl-content h4 { color: #e65100; }
+    .hl-info { background: #e3f2fd; border-left: 4px solid #1976d2; }
+    .hl-info .hl-content h4 { color: #1565c0; }
+    .hl-success { background: #e8f5e9; border-left: 4px solid #388e3c; }
+    .hl-success .hl-content h4 { color: #2e7d32; }
+    .hl-danger { background: #ffebee; border-left: 4px solid #e53935; }
+    .hl-danger .hl-content h4 { color: #c62828; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+    footer strong { color: #fff; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      .header-stats { gap: 12px; }
+      .header-stat { padding: 10px 16px; }
+      .header-stat .num { font-size: 1.4rem; }
+      section { padding: 36px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="badge">Material de Estudo para Concursos</div>
+  <h1>Lei de Responsabilidade Fiscal<br><span>LC nº 101/2000</span></h1>
+  <p>Guia completo e interativo para dominar a LRF nas provas de concursos públicos</p>
+  <div class="header-stats">
+    <div class="header-stat">
+      <div class="num">75</div>
+      <div class="label">Artigos na lei</div>
+    </div>
+    <div class="header-stat">
+      <div class="num">10</div>
+      <div class="label">Capítulos</div>
+    </div>
+    <div class="header-stat">
+      <div class="num">8.991</div>
+      <div class="label">Questões analisadas</div>
+    </div>
+    <div class="header-stat">
+      <div class="num">2000</div>
+      <div class="label">Ano de publicação</div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <ul>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#introducao" class="active">📋 Introdução</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#pilares" class="">🏛️ Pilares</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#cobrados" class="">📊 Mais Cobrados</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#pessoal" class="">👥 Despesas c/ Pessoal</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#planejamento" class="">📅 Planejamento</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#receita" class="">💰 Receita</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#divida" class="">🏦 Dívida</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#transparencia" class="">🔍 Transparência</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#glossario" class="">📖 Glossário</a></li>
+    <li><a href="https://8080-igy7t1gcmxm8o1rzqtru6-24afdabe.us2.manus.computer/#quiz-section" class="">🎯 Quiz</a></li>
+  </ul>
+</nav>
+
+<!-- ===== INTRODUÇÃO ===== -->
+<section id="introducao">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">📋</div>
+      Introdução à LRF
+    </div>
+    <p class="section-subtitle">Contexto histórico, objetivos e abrangência da lei</p>
+
+    <div class="card-grid card-grid-2">
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:12px;font-size:1.05rem;">⚡ Por que a LRF foi criada?</h3>
+        <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.8;">
+          A LRF surgiu em 2000 em um contexto de grave <strong>crise fiscal</strong> no Brasil. Déficits públicos descontrolados, endividamento crescente e falta de disciplina fiscal caracterizavam a época, colocando em risco a estabilidade econômica. A lei veio para restaurar a saúde fiscal e garantir a <strong>sustentabilidade das contas públicas</strong> no longo prazo.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:12px;font-size:1.05rem;">🎯 Objetivo Central</h3>
+        <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.8;">
+          Estabelecer normas de finanças públicas voltadas para a <strong>responsabilidade na gestão fiscal</strong>, com ação planejada e transparente, prevenindo riscos e corrigindo desvios capazes de afetar o equilíbrio das contas públicas. Exige o cumprimento de metas de resultados entre receitas e despesas.
+        </p>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-info" style="margin-top:24px;">
+      <div class="hl-icon">ℹ️</div>
+      <div class="hl-content">
+        <h4>Abrangência da Lei (Art. 1º, §2º e §3º)</h4>
+        <p>As disposições da LRF obrigam a <strong>União, os Estados, o Distrito Federal e os Municípios</strong>, compreendendo os Poderes Executivo, Legislativo (incluindo Tribunais de Contas), Judiciário e o Ministério Público, bem como as administrações diretas, fundos, autarquias, fundações e empresas estatais dependentes.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-warning" style="margin-top:16px;">
+      <div class="hl-icon">⚠️</div>
+      <div class="hl-content">
+        <h4>Ponto de Atenção: Receita Corrente Líquida (RCL)</h4>
+        <p>A <strong>Receita Corrente Líquida (RCL)</strong> é a base de cálculo para os principais limites da LRF. É apurada somando-se as receitas arrecadadas no mês em referência e nos <strong>onze anteriores</strong>, excluídas as duplicidades. Dela são deduzidas as transferências constitucionais e as contribuições previdenciárias dos servidores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PILARES ===== -->
+<section id="pilares" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">🏛️</div>
+      Os 4 Pilares da LRF
+    </div>
+    <p class="section-subtitle">Fundamentos que sustentam a responsabilidade na gestão fiscal</p>
+
+    <div class="card-grid card-grid-4">
+      <div class="pilar-card pilar-planejamento" data-icon="📅">
+        <h3>Planejamento</h3>
+        <p>PPA, LDO e LOA devem ser compatíveis. Exige Anexo de Metas Fiscais e Anexo de Riscos Fiscais na LDO.</p>
+      </div>
+      <div class="pilar-card pilar-transparencia" data-icon="🔍">
+        <h3>Transparência</h3>
+        <p>Ampla divulgação das contas públicas, RREO bimestral, RGF quadrimestral e participação popular.</p>
+      </div>
+      <div class="pilar-card pilar-controle" data-icon="⚖️">
+        <h3>Controle</h3>
+        <p>Limites para despesas com pessoal (50%/60% da RCL) e dívida consolidada. Verificação quadrimestral.</p>
+      </div>
+      <div class="pilar-card pilar-responsabilidade" data-icon="⚡">
+        <h3>Responsabilização</h3>
+        <p>Penalidades severas: vedação de transferências, operações de crédito e responsabilidade pessoal do gestor.</p>
+      </div>
+    </div>
+
+    <!-- Mapa Mental -->
+    <div class="mapa-mental" style="margin-top:32px;">
+      <div class="mapa-center">
+        <div class="mapa-node-main">🏛️ LRF – LC 101/2000</div>
+        <div class="mapa-branches">
+          <div class="mapa-branch b1">
+            📅 Planejamento
+            <ul>
+              <li>PPA</li>
+              <li>LDO + Anexos</li>
+              <li>LOA</li>
+              <li>Execução Orçamentária</li>
+            </ul>
+          </div>
+          <div class="mapa-branch b2">
+            💰 Receita
+            <ul>
+              <li>Previsão</li>
+              <li>Arrecadação</li>
+              <li>Renúncia de Receita</li>
+            </ul>
+          </div>
+          <div class="mapa-branch b3">
+            💸 Despesa
+            <ul>
+              <li>Geração de Despesa</li>
+              <li>Despesas c/ Pessoal</li>
+              <li>Seguridade Social</li>
+            </ul>
+          </div>
+          <div class="mapa-branch b4">
+            🏦 Dívida
+            <ul>
+              <li>Dívida Consolidada</li>
+              <li>Dívida Mobiliária</li>
+              <li>Operações de Crédito</li>
+            </ul>
+          </div>
+          <div class="mapa-branch b5">
+            🔍 Transparência
+            <ul>
+              <li>RREO</li>
+              <li>RGF</li>
+              <li>Prestação de Contas</li>
+            </ul>
+          </div>
+          <div class="mapa-branch b6">
+            ⚡ Sanções
+            <ul>
+              <li>Vedação Transferências</li>
+              <li>Vedação Crédito</li>
+              <li>Responsabilidade Penal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAIS COBRADOS ===== -->
+<section id="cobrados">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">📊</div>
+      Tópicos Mais Cobrados em Provas
+    </div>
+    <p class="section-subtitle">Análise de 8.991 questões de concursos públicos sobre a LRF</p>
+
+    <div class="charts-grid">
+      <div class="chart-container">
+        <div class="chart-title">Distribuição por Capítulo (%)</div>
+        <canvas id="chartPie" height="577" width="577" style="display: block; box-sizing: border-box; height: 462px; width: 462px;"></canvas>
+      </div>
+      <div class="chart-container">
+        <div class="chart-title">Ranking dos Tópicos (Nº de Questões)</div>
+        <canvas id="chartBar" height="577" width="577" style="display: block; box-sizing: border-box; height: 462px; width: 462px;"></canvas>
+      </div>
+    </div>
+
+    <div class="table-wrapper" style="margin-top:28px;">
+      <table>
+        <thead>
+          <tr>
+            <th>Capítulo / Assunto</th>
+            <th>Questões</th>
+            <th>Percentual</th>
+            <th>Prioridade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Cap. IV – Despesa Pública</strong></td>
+            <td>2.124</td>
+            <td>23,62%</td>
+            <td><span class="badge-limit badge-alerta">🔥 Altíssima</span></td>
+          </tr>
+          <tr>
+            <td><strong>Cap. II – Planejamento</strong></td>
+            <td>1.741</td>
+            <td>19,36%</td>
+            <td><span class="badge-limit badge-alerta">🔥 Altíssima</span></td>
+          </tr>
+          <tr>
+            <td><strong>Cap. I – Disposições Preliminares</strong></td>
+            <td>862</td>
+            <td>9,59%</td>
+            <td><span class="badge-limit badge-prudencial">⚡ Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Cap. III – Receita Pública</strong></td>
+            <td>847</td>
+            <td>9,42%</td>
+            <td><span class="badge-limit badge-prudencial">⚡ Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Cap. VII – Dívida e Endividamento</strong></td>
+            <td>679</td>
+            <td>7,55%</td>
+            <td><span class="badge-limit badge-prudencial">⚡ Alta</span></td>
+          </tr>
+          <tr>
+            <td>Seção IV – Operações de Crédito</td>
+            <td>473</td>
+            <td>5,26%</td>
+            <td><span class="badge-limit badge-60">📌 Média</span></td>
+          </tr>
+          <tr>
+            <td>Cap. IX – Transparência, Controle e Fiscalização</td>
+            <td>351</td>
+            <td>3,90%</td>
+            <td><span class="badge-limit badge-60">📌 Média</span></td>
+          </tr>
+          <tr>
+            <td>Seção IV – Relatório de Gestão Fiscal</td>
+            <td>327</td>
+            <td>3,64%</td>
+            <td><span class="badge-limit badge-60">📌 Média</span></td>
+          </tr>
+          <tr>
+            <td>Seção III – Relatório Resumido da Execução Orçamentária</td>
+            <td>292</td>
+            <td>3,25%</td>
+            <td><span class="badge-limit badge-60">📌 Média</span></td>
+          </tr>
+          <tr>
+            <td>Cap. V – Transferências Voluntárias</td>
+            <td>227</td>
+            <td>2,52%</td>
+            <td><span class="badge-limit badge-50">📎 Baixa</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DESPESAS COM PESSOAL ===== -->
+<section id="pessoal" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">👥</div>
+      Despesas com Pessoal
+    </div>
+    <p class="section-subtitle">O tema mais cobrado em provas — limites, controle e penalidades (Arts. 18 a 23)</p>
+
+    <div class="card-grid card-grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;font-size:1rem;">📐 Limites Globais (Art. 19)</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Ente</th><th>Limite da RCL</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>União</strong></td><td><span class="badge-limit badge-50">50%</span></td></tr>
+              <tr><td><strong>Estados</strong></td><td><span class="badge-limit badge-60">60%</span></td></tr>
+              <tr><td><strong>Municípios</strong></td><td><span class="badge-limit badge-60">60%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;font-size:1rem;">🔔 Limites de Alerta e Prudencial</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Limite</th><th>Percentual</th><th>Consequência</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Alerta</strong></td>
+                <td><span class="badge-limit badge-prudencial">90%</span></td>
+                <td>TCU/TCE emite alerta ao Poder</td>
+              </tr>
+              <tr>
+                <td><strong>Prudencial</strong></td>
+                <td><span class="badge-limit badge-alerta">95%</span></td>
+                <td>Vedações imediatas (Art. 22)</td>
+              </tr>
+              <tr>
+                <td><strong>Máximo</strong></td>
+                <td><span class="badge-limit badge-alerta">100%</span></td>
+                <td>Eliminação do excesso em 2 quadrimestres</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gráfico de limites -->
+    <div class="chart-container" style="margin-bottom:24px;">
+      <div class="chart-title">Repartição dos Limites de Pessoal por Poder — Esfera Federal (50% da RCL)</div>
+      <canvas id="chartPessoalFederal" height="502" width="1255" style="display: block; box-sizing: border-box; height: 401px; width: 1004px;"></canvas>
+    </div>
+
+    <div class="charts-grid">
+      <div class="chart-container">
+        <div class="chart-title">Repartição — Esfera Estadual (60% da RCL)</div>
+        <canvas id="chartPessoalEstadual" height="577" width="577" style="display: block; box-sizing: border-box; height: 462px; width: 462px;"></canvas>
+      </div>
+      <div class="chart-container">
+        <div class="chart-title">Repartição — Esfera Municipal (60% da RCL)</div>
+        <canvas id="chartPessoalMunicipal" height="577" width="577" style="display: block; box-sizing: border-box; height: 462px; width: 462px;"></canvas>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-danger" style="margin-top:24px;">
+      <div class="hl-icon">🚫</div>
+      <div class="hl-content">
+        <h4>Vedações ao atingir 95% do limite (Art. 22 — Limite Prudencial)</h4>
+        <p>São vedados ao Poder ou órgão que houver incorrido no excesso: (I) concessão de vantagem, aumento, reajuste ou adequação de remuneração; (II) criação de cargo, emprego ou função; (III) alteração de estrutura de carreira que implique aumento de despesa; (IV) provimento de cargo público, admissão ou contratação de pessoal (ressalvada reposição em educação, saúde e segurança); (V) contratação de hora extra.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-warning" style="margin-top:16px;">
+      <div class="hl-icon">⏱️</div>
+      <div class="hl-content">
+        <h4>Regra dos 180 dias (Art. 21) — Muito Cobrado!</h4>
+        <p>É <strong>nulo de pleno direito</strong> o ato que resulte em aumento da despesa com pessoal nos <strong>180 dias anteriores ao final do mandato</strong> do titular do Poder ou órgão. Também é nulo o ato que preveja parcelas a serem implementadas em períodos posteriores ao final do mandato.</p>
+      </div>
+    </div>
+
+    <div class="accordion" style="margin-top:24px;">
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          O que é computado como Despesa Total com Pessoal? (Art. 18)
+          <span class="chevron">▼</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p>É o somatório dos gastos do ente com <strong>ativos, inativos e pensionistas</strong>, relativos a mandatos eletivos, cargos, funções ou empregos, civis, militares e de membros de Poder, incluindo:</p>
+            <ul>
+              <li>Vencimentos e vantagens, fixas e variáveis</li>
+              <li>Subsídios, proventos de aposentadoria, reformas e pensões</li>
+              <li>Adicionais, gratificações, horas extras e vantagens pessoais</li>
+              <li>Encargos sociais e contribuições previdenciárias</li>
+              <li>Contratos de terceirização de mão de obra (substituição de servidores)</li>
+            </ul>
+            <p style="margin-top:10px;"><strong>Apuração:</strong> Soma do mês em referência com os 11 imediatamente anteriores (regime de competência).</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          O que NÃO é computado nos limites de pessoal? (Art. 19, §1º)
+          <span class="chevron">▼</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Indenização por demissão de servidores ou empregados</li>
+              <li>Incentivos à demissão voluntária</li>
+              <li>Despesas derivadas de decisão judicial de competência de período anterior</li>
+              <li>Despesas com pessoal do DF e dos Estados do Amapá e Roraima custeadas com recursos da União</li>
+              <li>Inativos e pensionistas custeados por contribuições dos segurados, compensação financeira ou receitas diretamente arrecadadas pelo fundo previdenciário</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Sanções por excesso no limite máximo (Art. 23, §3º)
+          <span class="chevron">▼</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p>Enquanto não eliminado o excesso, o ente não poderá:</p>
+            <ul>
+              <li><strong>I –</strong> Receber transferências voluntárias</li>
+              <li><strong>II –</strong> Obter garantia, direta ou indireta, de outro ente</li>
+              <li><strong>III –</strong> Contratar operações de crédito (ressalvadas as para pagamento da dívida mobiliária e as que visem à redução das despesas com pessoal)</li>
+            </ul>
+            <p style="margin-top:10px;"><strong>Prazo para eliminação:</strong> 2 quadrimestres seguintes, sendo pelo menos 1/3 no primeiro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLANEJAMENTO ===== -->
+<section id="planejamento">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">📅</div>
+      Planejamento Orçamentário
+    </div>
+    <p class="section-subtitle">PPA, LDO e LOA — instrumentos de planejamento e seus requisitos na LRF (Arts. 3º a 10)</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Art. 3º (VETADO)</div>
+          <h4>📋 Plano Plurianual (PPA)</h4>
+          <p>O artigo sobre o PPA foi vetado. O PPA é tratado diretamente pela Constituição Federal (Art. 165, §1º). Contudo, a LRF exige que a LOA seja elaborada de forma compatível com o PPA.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Art. 4º</div>
+          <h4>📑 Lei de Diretrizes Orçamentárias (LDO)</h4>
+          <p>A LDO deve conter obrigatoriamente: <strong>Anexo de Metas Fiscais</strong> (metas anuais de receitas, despesas, resultados nominal e primário e dívida pública para o exercício e os 2 seguintes) e <strong>Anexo de Riscos Fiscais</strong> (avaliação de passivos contingentes e outros riscos). A LDO também deve dispor sobre critérios de limitação de empenho.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Art. 5º</div>
+          <h4>📊 Lei Orçamentária Anual (LOA)</h4>
+          <p>A LOA deve ser compatível com o PPA e a LDO. Deve conter: demonstrativo de compatibilidade com as metas fiscais, reserva de contingência (para passivos contingentes e riscos fiscais imprevistos), e todas as despesas relativas à dívida pública. É <strong>vedado</strong> consignar dotação com finalidade imprecisa ou ilimitada.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-tag">Art. 9º</div>
+          <h4>⚖️ Limitação de Empenho (Contingenciamento)</h4>
+          <p>Se ao final de um <strong>bimestre</strong> a receita não comportar o cumprimento das metas fiscais, os Poderes e o MP promoverão, nos <strong>30 dias subsequentes</strong>, limitação de empenho e movimentação financeira. <strong>Não são objeto de limitação:</strong> obrigações constitucionais e legais, serviço da dívida e despesas com inovação e desenvolvimento científico.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-success" style="margin-top:24px;">
+      <div class="hl-icon">📌</div>
+      <div class="hl-content">
+        <h4>Audiências Públicas Quadrimestrais (Art. 9º, §4º)</h4>
+        <p>Até o final dos meses de <strong>maio, setembro e fevereiro</strong>, o Ministro ou Secretário de Estado da Fazenda demonstrará e avaliará o cumprimento das metas fiscais de cada quadrimestre e a trajetória da dívida, em audiência pública na comissão do Legislativo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECEITA PÚBLICA ===== -->
+<section id="receita" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">💰</div>
+      Receita Pública
+    </div>
+    <p class="section-subtitle">Previsão, arrecadação e renúncia de receita (Arts. 11 a 14)</p>
+
+    <div class="card-grid card-grid-2">
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:12px;font-size:1rem;">📈 Previsão e Arrecadação (Arts. 11 e 12)</h3>
+        <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.8;">
+          A instituição, previsão e efetiva arrecadação de todos os tributos da competência constitucional do ente são <strong>requisitos essenciais</strong> da responsabilidade fiscal. É <strong>vedada</strong> a realização de transferências voluntárias para o ente que não observe essa obrigação quanto aos impostos. As previsões devem considerar efeitos de alterações na legislação, variação de preços e crescimento econômico.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:12px;font-size:1rem;">🚫 Renúncia de Receita (Art. 14)</h3>
+        <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.8;">
+          A concessão de incentivo fiscal que resulte em renúncia de receita deve ser acompanhada de estimativa do impacto orçamentário-financeiro e atender a pelo menos uma das condições: (I) demonstrar que a renúncia foi considerada na estimativa de receita da LOA e não afetará as metas fiscais; ou (II) estar acompanhada de medidas de compensação (aumento de alíquotas, ampliação da base de cálculo, criação de tributo).
+        </p>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-info" style="margin-top:24px;">
+      <div class="hl-icon">📖</div>
+      <div class="hl-content">
+        <h4>O que é Renúncia de Receita? (Art. 14, §1º)</h4>
+        <p>Compreende: <strong>anistia, remissão, subsídio, crédito presumido, concessão de isenção em caráter não geral, alteração de alíquota ou modificação de base de cálculo</strong> que implique redução discriminada de tributos ou contribuições, e outros benefícios que correspondam a tratamento diferenciado.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-warning" style="margin-top:16px;">
+      <div class="hl-icon">⚠️</div>
+      <div class="hl-content">
+        <h4>Exceções à Renúncia de Receita (Art. 14, §3º)</h4>
+        <p>O Art. 14 <strong>não se aplica</strong> às alterações das alíquotas dos impostos extrafiscais (II, IE, IPI, IOF) na forma do Art. 153, §1º da CF, nem ao cancelamento de débito cujo montante seja inferior ao dos respectivos custos de cobrança.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DÍVIDA ===== -->
+<section id="divida">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">🏦</div>
+      Dívida e Endividamento
+    </div>
+    <p class="section-subtitle">Definições, limites e operações de crédito (Arts. 29 a 42)</p>
+
+    <div class="card-grid card-grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;font-size:1rem;">📚 Definições Básicas (Art. 29)</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Conceito</th><th>Definição</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Dívida Consolidada</strong></td>
+                <td>Obrigações financeiras para amortização em prazo superior a 12 meses</td>
+              </tr>
+              <tr>
+                <td><strong>Dívida Mobiliária</strong></td>
+                <td>Representada por títulos emitidos pela União, Estados e Municípios</td>
+              </tr>
+              <tr>
+                <td><strong>Operação de Crédito</strong></td>
+                <td>Mútuo, abertura de crédito, emissão de título, aquisição financiada de bens, etc.</td>
+              </tr>
+              <tr>
+                <td><strong>Concessão de Garantia</strong></td>
+                <td>Compromisso de adimplência de obrigação financeira ou contratual</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;font-size:1rem;">⚠️ Recondução da Dívida (Art. 31)</h3>
+        <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.8;margin-bottom:12px;">
+          Se a dívida consolidada ultrapassar o limite ao final de um <strong>quadrimestre</strong>, deve ser reconduzida ao limite nos <strong>3 quadrimestres subsequentes</strong>, reduzindo o excedente em pelo menos <strong>25% no primeiro</strong>.
+        </p>
+        <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.8;">
+          Enquanto perdurar o excesso: <strong>proibição de realizar operações de crédito</strong> (exceto refinanciamento de dívida mobiliária) e obtenção do resultado primário necessário.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Operações de Crédito por Antecipação de Receita (ARO) — Art. 38
+          <span class="chevron">▼</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p>A ARO destina-se a atender <strong>insuficiência de caixa</strong> durante o exercício financeiro. Requisitos:</p>
+            <ul>
+              <li>Somente a partir do <strong>10º dia do início do exercício</strong></li>
+              <li>Deve ser liquidada até o dia <strong>10 de dezembro</strong> de cada ano</li>
+              <li>Encargos: apenas taxa de juros prefixada ou indexada à taxa básica financeira</li>
+              <li><strong>Proibida:</strong> enquanto existir operação anterior não resgatada</li>
+              <li><strong>Proibida:</strong> no <strong>último ano de mandato</strong> do Presidente, Governador ou Prefeito</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Vedações às Operações de Crédito (Arts. 35 a 37)
+          <span class="chevron">▼</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li><strong>Art. 35:</strong> Vedada operação de crédito entre entes da Federação (exceto entre instituição financeira estatal e outro ente, para fins não correntes)</li>
+              <li><strong>Art. 36:</strong> Proibida operação de crédito entre instituição financeira estatal e o ente que a controla (como beneficiário)</li>
+              <li><strong>Art. 37:</strong> Equiparadas a operações de crédito e vedadas: captação antecipada de tributo cujo fato gerador não ocorreu; recebimento antecipado de empresa controlada; assunção de compromisso com fornecedor mediante título de crédito; assunção de obrigação sem autorização orçamentária</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Restos a Pagar — Art. 42 (Muito Cobrado!)
+          <span class="chevron">▼</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p>É <strong>vedado</strong> ao titular de Poder ou órgão, nos <strong>últimos dois quadrimestres</strong> do seu mandato, contrair obrigação de despesa que:</p>
+            <ul>
+              <li>Não possa ser cumprida integralmente dentro do mandato; ou</li>
+              <li>Tenha parcelas a serem pagas no exercício seguinte <strong>sem que haja suficiente disponibilidade de caixa</strong></li>
+            </ul>
+            <p style="margin-top:10px;">Na determinação da disponibilidade de caixa serão considerados os encargos e despesas compromissadas a pagar até o final do exercício.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRANSPARÊNCIA ===== -->
+<section id="transparencia" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">🔍</div>
+      Transparência, Controle e Fiscalização
+    </div>
+    <p class="section-subtitle">Instrumentos de transparência e relatórios obrigatórios (Arts. 48 a 59)</p>
+
+    <div class="card-grid card-grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;font-size:1rem;">📋 RREO — Relatório Resumido da Execução Orçamentária</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Aspecto</th><th>Detalhe</th></tr></thead>
+            <tbody>
+              <tr><td>Periodicidade</td><td><strong>Bimestral</strong></td></tr>
+              <tr><td>Prazo de publicação</td><td>30 dias após o encerramento do bimestre</td></tr>
+              <tr><td>Responsável</td><td>Poder Executivo</td></tr>
+              <tr><td>Conteúdo</td><td>Balanço orçamentário, demonstrativo de receitas e despesas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;font-size:1rem;">📊 RGF — Relatório de Gestão Fiscal</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Aspecto</th><th>Detalhe</th></tr></thead>
+            <tbody>
+              <tr><td>Periodicidade</td><td><strong>Quadrimestral</strong></td></tr>
+              <tr><td>Prazo de publicação</td><td>30 dias após o encerramento do quadrimestre</td></tr>
+              <tr><td>Responsável</td><td>Cada Poder e órgão</td></tr>
+              <tr><td>Conteúdo</td><td>Despesas com pessoal, dívida consolidada, operações de crédito, garantias e ARO</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box hl-info" style="margin-bottom:24px;">
+      <div class="hl-icon">📢</div>
+      <div class="hl-content">
+        <h4>Instrumentos de Transparência (Art. 48)</h4>
+        <p>São instrumentos de transparência, com ampla divulgação inclusive em meios eletrônicos: <strong>planos, orçamentos e LDO; prestações de contas e parecer prévio; RREO e RGF; e versões simplificadas desses documentos</strong>. A transparência também é assegurada por audiências públicas, liberação em tempo real de informações sobre execução orçamentária e adoção de sistema integrado de administração financeira.</p>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-3">
+      <div class="card">
+        <h3 style="color:var(--secondary);margin-bottom:10px;font-size:0.95rem;">✅ Transferências Voluntárias (Art. 25)</h3>
+        <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;">São exigências para receber transferências voluntárias: estar em dia com tributos, empréstimos e financiamentos; cumprir limites de educação e saúde; observar limites de dívida e pessoal; ter previsão orçamentária de contrapartida.</p>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--secondary);margin-bottom:10px;font-size:0.95rem;">✅ Prestação de Contas (Art. 49)</h3>
+        <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;">As contas do Chefe do Poder Executivo ficarão disponíveis durante todo o exercício no Poder Legislativo e no órgão técnico responsável, para consulta e apreciação pelos cidadãos e pela sociedade.</p>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--secondary);margin-bottom:10px;font-size:0.95rem;">✅ Fiscalização (Art. 59)</h3>
+        <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;">O Poder Legislativo, com auxílio do Tribunal de Contas, e o sistema de controle interno de cada Poder e do MP fiscalizarão o cumprimento das normas da LRF, com ênfase em atingimento das metas fiscais, limites e condições.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GLOSSÁRIO ===== -->
+<section id="glossario">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">📖</div>
+      Glossário Essencial
+    </div>
+    <p class="section-subtitle">Conceitos fundamentais que aparecem frequentemente nas provas</p>
+
+    <div class="glossario-grid">
+      <div class="glossario-item">
+        <h4>Receita Corrente Líquida (RCL)</h4>
+        <p>Somatório das receitas tributárias, de contribuições, patrimoniais, industriais, agropecuárias, de serviços e transferências correntes, deduzidas as transferências constitucionais e contribuições previdenciárias. Apurada nos últimos 12 meses.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Empresa Estatal Dependente</h4>
+        <p>Empresa controlada que receba do ente controlador recursos financeiros para pagamento de despesas com pessoal, custeio em geral ou de capital (exceto aumento de participação acionária).</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Dívida Consolidada (Fundada)</h4>
+        <p>Montante total das obrigações financeiras do ente assumidas via leis, contratos, convênios ou operações de crédito, para amortização em prazo superior a 12 meses.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Dívida Mobiliária</h4>
+        <p>Dívida pública representada por títulos emitidos pela União (inclusive Banco Central), Estados e Municípios.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Operação de Crédito</h4>
+        <p>Compromisso financeiro por mútuo, abertura de crédito, emissão de título, aquisição financiada de bens, recebimento antecipado de venda a termo, arrendamento mercantil e operações assemelhadas, inclusive com derivativos.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Restos a Pagar</h4>
+        <p>Despesas empenhadas mas não pagas até o encerramento do exercício financeiro. Podem ser processados (liquidados) ou não processados (apenas empenhados).</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Despesa Obrigatória de Caráter Continuado</h4>
+        <p>Despesa corrente derivada de lei, medida provisória ou ato normativo que fixe para o ente a obrigação legal de sua execução por um período superior a 2 exercícios.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Transferência Voluntária</h4>
+        <p>Entrega de recursos correntes ou de capital a outro ente da Federação a título de cooperação, auxílio ou assistência financeira, que não decorra de determinação constitucional, legal ou destinação ao SUS.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Resultado Primário</h4>
+        <p>Diferença entre receitas e despesas primárias (excluindo receitas e despesas financeiras). Mede o esforço fiscal do governo para pagar a dívida.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Resultado Nominal</h4>
+        <p>Diferença entre todas as receitas e todas as despesas, incluindo as financeiras (juros e amortizações). Indica a variação total da dívida pública.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Anexo de Metas Fiscais</h4>
+        <p>Parte integrante da LDO que estabelece metas anuais de receitas, despesas, resultados nominal e primário e dívida pública para o exercício e os 2 seguintes.</p>
+      </div>
+      <div class="glossario-item">
+        <h4>Anexo de Riscos Fiscais</h4>
+        <p>Parte integrante da LDO que avalia os passivos contingentes e outros riscos capazes de afetar as contas públicas, com providências a serem tomadas caso se concretizem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUIZ ===== -->
+<section id="quiz-section">
+  <div class="container">
+    <div class="section-title">
+      <div class="icon">🎯</div>
+      Quiz Interativo
+    </div>
+    <p class="section-subtitle">Teste seus conhecimentos com questões no estilo de concurso público</p>
+
+    <div class="quiz-card">
+      <div id="quiz-main">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 30%;"></div>
+          </div>
+          <span class="quiz-counter" id="quiz-counter">Questão 4 de 10</span>
+        </div>
+        <div class="quiz-question" id="quiz-question">Qual é o prazo para liquidação das Operações de Crédito por Antecipação de Receita Orçamentária (ARO)?</div>
+        <div class="quiz-options" id="quiz-options"><button class="quiz-option">A) Até 31 de outubro de cada ano</button><button class="quiz-option">B) Até 10 de dezembro de cada ano</button><button class="quiz-option">C) Até 31 de dezembro de cada ano</button><button class="quiz-option">D) Até 10 de janeiro do exercício seguinte</button></div>
+        <div class="quiz-feedback" id="quiz-feedback"></div>
+        <div class="quiz-nav">
+          <span id="quiz-score-display" style="font-size:0.85rem;color:var(--text-muted);">Acertos: 1</span>
+          <button class="btn btn-primary" id="quiz-next-btn" onclick="nextQuestion()" style="display: none;">Próxima →</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="quiz-result">
+        <div class="quiz-stars" id="quiz-stars"></div>
+        <div class="quiz-score" id="quiz-score-final"></div>
+        <div class="quiz-score-label" id="quiz-score-label"></div>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin:16px 0;">Continue estudando para dominar a LRF!</p>
+        <button class="btn btn-primary" onclick="restartQuiz()">🔄 Refazer Quiz</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p><strong>Material de Estudo — Lei de Responsabilidade Fiscal (LC 101/2000)</strong></p>
+  <p style="margin-top:8px;">Elaborado com base no texto oficial da lei e análise de questões de concursos públicos.</p>
+  <p style="margin-top:6px;">Fonte: <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm" style="color:#ffd54f;" target="_blank">Planalto.gov.br</a></p>
+</footer>
+
+<script>
+// ===== ACCORDION =====
+function toggleAccordion(btn) {
+  const body = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.accordion-header.open').forEach(h => {
+    h.classList.remove('open');
+    h.nextElementSibling.classList.remove('open');
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    body.classList.add('open');
+  }
+}
+
+// ===== CHARTS =====
+const chartColors = {
+  blue: '#1565c0', green: '#2e7d32', orange: '#e65100',
+  purple: '#6a1b9a', teal: '#00695c', red: '#c62828',
+  lightBlue: '#1976d2', lightGreen: '#388e3c', amber: '#f9a825',
+  grey: '#546e7a'
+};
+
+// Gráfico de pizza — distribuição por capítulo
+new Chart(document.getElementById('chartPie'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Despesa Pública', 'Planejamento', 'Disp. Preliminares', 'Receita Pública', 'Dívida', 'Operações de Crédito', 'Transparência', 'RGF', 'RREO', 'Outros'],
+    datasets: [{
+      data: [23.62, 19.36, 9.59, 9.42, 7.55, 5.26, 3.90, 3.64, 3.25, 14.41],
+      backgroundColor: [
+        '#c62828','#1565c0','#2e7d32','#e65100','#6a1b9a',
+        '#00695c','#0277bd','#f57c00','#558b2f','#546e7a'
+      ],
+      borderWidth: 2, borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'right', labels: { font: { size: 11 }, padding: 12 } },
+      tooltip: {
+        callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed}%` }
+      }
+    }
+  }
+});
+
+// Gráfico de barras — ranking
+new Chart(document.getElementById('chartBar'), {
+  type: 'bar',
+  data: {
+    labels: ['Despesa Pública', 'Planejamento', 'Disp. Preliminares', 'Receita Pública', 'Dívida', 'Op. de Crédito', 'Transparência', 'RGF', 'RREO', 'Transf. Voluntárias'],
+    datasets: [{
+      label: 'Nº de Questões',
+      data: [2124, 1741, 862, 847, 679, 473, 351, 327, 292, 227],
+      backgroundColor: [
+        '#c62828','#1565c0','#2e7d32','#e65100','#6a1b9a',
+        '#00695c','#0277bd','#f57c00','#558b2f','#546e7a'
+      ],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#f0f0f0' }, ticks: { font: { size: 11 } } },
+      y: { ticks: { font: { size: 11 } } }
+    }
+  }
+});
+
+// Gráfico pessoal federal
+new Chart(document.getElementById('chartPessoalFederal'), {
+  type: 'bar',
+  data: {
+    labels: ['Executivo', 'Judiciário', 'Legislativo + TCU', 'MPU'],
+    datasets: [{
+      label: '% da RCL',
+      data: [40.9, 6.0, 2.5, 0.6],
+      backgroundColor: ['#1565c0','#2e7d32','#e65100','#6a1b9a'],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, max: 50, ticks: { callback: v => v + '%' } },
+      x: { ticks: { font: { size: 12 } } }
+    }
+  }
+});
+
+// Gráfico pessoal estadual
+new Chart(document.getElementById('chartPessoalEstadual'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Executivo (49%)', 'Judiciário (6%)', 'Legislativo + TCE (3%)', 'MP Estadual (2%)'],
+    datasets: [{
+      data: [49, 6, 3, 2],
+      backgroundColor: ['#1565c0','#2e7d32','#e65100','#6a1b9a'],
+      borderWidth: 2, borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 10 } } }
+  }
+});
+
+// Gráfico pessoal municipal
+new Chart(document.getElementById('chartPessoalMunicipal'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Executivo (54%)', 'Legislativo + TCM (6%)'],
+    datasets: [{
+      data: [54, 6],
+      backgroundColor: ['#1565c0','#e65100'],
+      borderWidth: 2, borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 10 } } }
+  }
+});
+
+// ===== QUIZ =====
+const questions = [
+  {
+    q: "Qual é o limite de despesas com pessoal para os Municípios, conforme o Art. 19 da LRF?",
+    options: ["40% da RCL", "50% da RCL", "60% da RCL", "70% da RCL"],
+    correct: 2,
+    explanation: "O Art. 19 da LRF estabelece que a despesa total com pessoal dos Municípios não poderá exceder 60% da Receita Corrente Líquida. O mesmo limite se aplica aos Estados. Para a União, o limite é de 50%."
+  },
+  {
+    q: "Quando a despesa total com pessoal de um Poder ou órgão exceder 95% do limite, o que ocorre imediatamente?",
+    options: [
+      "O ente fica proibido de receber transferências voluntárias",
+      "São vedadas a concessão de vantagens, criação de cargos e contratações (ressalvadas exceções)",
+      "O excesso deve ser eliminado em 2 quadrimestres",
+      "O Tribunal de Contas emite alerta ao Poder"
+    ],
+    correct: 1,
+    explanation: "O Art. 22 da LRF estabelece que ao atingir 95% do limite (limite prudencial), são vedados: concessão de vantagens/aumentos, criação de cargos, alteração de estrutura de carreira, provimento de cargos (exceto reposição em educação, saúde e segurança) e contratação de hora extra."
+  },
+  {
+    q: "A Receita Corrente Líquida (RCL) é apurada somando-se as receitas arrecadadas no mês em referência e nos:",
+    options: ["Três meses anteriores", "Seis meses anteriores", "Onze meses anteriores", "Doze meses anteriores"],
+    correct: 2,
+    explanation: "Conforme o Art. 2º, §3º da LRF, a RCL será apurada somando-se as receitas arrecadadas no mês em referência e nos ONZE anteriores, excluídas as duplicidades. Isso resulta em um período de 12 meses no total."
+  },
+  {
+    q: "Qual é o prazo para liquidação das Operações de Crédito por Antecipação de Receita Orçamentária (ARO)?",
+    options: ["Até 31 de outubro de cada ano", "Até 10 de dezembro de cada ano", "Até 31 de dezembro de cada ano", "Até 10 de janeiro do exercício seguinte"],
+    correct: 1,
+    explanation: "O Art. 38, II da LRF determina que a ARO deverá ser liquidada, com juros e outros encargos incidentes, até o dia 10 de dezembro de cada ano. Além disso, é proibida no último ano de mandato do Presidente, Governador ou Prefeito."
+  },
+  {
+    q: "Qual documento integrante da LDO avalia os passivos contingentes e outros riscos capazes de afetar as contas públicas?",
+    options: ["Anexo de Metas Fiscais", "Anexo de Riscos Fiscais", "Reserva de Contingência", "Relatório de Gestão Fiscal"],
+    correct: 1,
+    explanation: "O Art. 4º, §3º da LRF determina que a LDO conterá Anexo de Riscos Fiscais, onde serão avaliados os passivos contingentes e outros riscos capazes de afetar as contas públicas, informando as providências a serem tomadas caso se concretizem."
+  },
+  {
+    q: "Se a dívida consolidada de um ente ultrapassar o limite ao final de um quadrimestre, em quanto tempo deve ser reconduzida ao limite?",
+    options: ["2 quadrimestres", "3 quadrimestres", "4 quadrimestres", "1 ano"],
+    correct: 1,
+    explanation: "O Art. 31 da LRF determina que a dívida deve ser reconduzida ao limite até o término dos 3 quadrimestres subsequentes, reduzindo o excedente em pelo menos 25% no primeiro quadrimestre."
+  },
+  {
+    q: "O Relatório Resumido da Execução Orçamentária (RREO) deve ser publicado com qual periodicidade?",
+    options: ["Mensal", "Bimestral", "Quadrimestral", "Semestral"],
+    correct: 1,
+    explanation: "O Art. 52 da LRF determina que o Poder Executivo publicará, até 30 dias após o encerramento de cada bimestre, o Relatório Resumido da Execução Orçamentária (RREO). Já o Relatório de Gestão Fiscal (RGF) é quadrimestral."
+  },
+  {
+    q: "É nulo de pleno direito o ato que resulte em aumento da despesa com pessoal nos quantos dias anteriores ao final do mandato?",
+    options: ["90 dias", "120 dias", "180 dias", "365 dias"],
+    correct: 2,
+    explanation: "O Art. 21, II da LRF (com redação dada pela LC 173/2020) determina que é nulo de pleno direito o ato de que resulte aumento da despesa com pessoal nos 180 dias anteriores ao final do mandato do titular de Poder ou órgão referido no Art. 20."
+  },
+  {
+    q: "Qual é o limite de despesas com pessoal para o Poder Executivo na esfera federal?",
+    options: ["40,9% da RCL", "37,9% da RCL", "44,9% da RCL", "50% da RCL"],
+    correct: 0,
+    explanation: "O Art. 20, I, c da LRF estabelece que o Poder Executivo Federal tem limite de 40,9% da RCL para despesas com pessoal. O limite global da União é de 50%, repartido entre: Executivo (40,9%), Judiciário (6%), Legislativo+TCU (2,5%) e MPU (0,6%)."
+  },
+  {
+    q: "A concessão de incentivo fiscal que resulte em renúncia de receita deve atender a pelo menos uma das seguintes condições, EXCETO:",
+    options: [
+      "Demonstrar que a renúncia foi considerada na estimativa de receita da LOA",
+      "Estar acompanhada de medidas de compensação por aumento de receita",
+      "Obter aprovação prévia do Tribunal de Contas",
+      "Demonstrar que não afetará as metas de resultados fiscais da LDO"
+    ],
+    correct: 2,
+    explanation: "O Art. 14 da LRF exige que a renúncia de receita atenda a pelo menos uma das condições: (I) demonstração de que foi considerada na estimativa de receita da LOA e não afetará as metas fiscais; ou (II) medidas de compensação por aumento de receita. A aprovação prévia do TCU não é condição prevista na LRF."
+  }
+];
+
+let currentQ = 0;
+let score = 0;
+let answered = false;
+
+function loadQuestion() {
+  const q = questions[currentQ];
+  document.getElementById('quiz-question').textContent = q.q;
+  document.getElementById('quiz-counter').textContent = `Questão ${currentQ + 1} de ${questions.length}`;
+  document.getElementById('quiz-progress-fill').style.width = `${(currentQ / questions.length) * 100}%`;
+  document.getElementById('quiz-score-display').textContent = `Acertos: ${score}`;
+  document.getElementById('quiz-next-btn').style.display = 'none';
+  document.getElementById('quiz-feedback').className = 'quiz-feedback';
+  document.getElementById('quiz-feedback').textContent = '';
+  answered = false;
+
+  const optionsEl = document.getElementById('quiz-options');
+  optionsEl.innerHTML = '';
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-option';
+    btn.textContent = `${String.fromCharCode(65 + i)}) ${opt}`;
+    btn.onclick = () => selectOption(i);
+    optionsEl.appendChild(btn);
+  });
+}
+
+function selectOption(idx) {
+  if (answered) return;
+  answered = true;
+  const q = questions[currentQ];
+  const options = document.querySelectorAll('.quiz-option');
+  options.forEach(o => o.classList.add('disabled'));
+  const feedback = document.getElementById('quiz-feedback');
+
+  if (idx === q.correct) {
+    score++;
+    options[idx].classList.add('correct');
+    feedback.className = 'quiz-feedback correct show';
+    feedback.innerHTML = `✅ <strong>Correto!</strong> ${q.explanation}`;
+  } else {
+    options[idx].classList.add('wrong');
+    options[q.correct].classList.add('correct');
+    feedback.className = 'quiz-feedback wrong show';
+    feedback.innerHTML = `❌ <strong>Incorreto.</strong> ${q.explanation}`;
+  }
+
+  document.getElementById('quiz-score-display').textContent = `Acertos: ${score}`;
+  document.getElementById('quiz-next-btn').style.display = 'block';
+  document.getElementById('quiz-next-btn').textContent = currentQ < questions.length - 1 ? 'Próxima →' : 'Ver Resultado';
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ < questions.length) {
+    loadQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function showResult() {
+  document.getElementById('quiz-main').style.display = 'none';
+  const result = document.getElementById('quiz-result');
+  result.classList.add('show');
+  const pct = Math.round((score / questions.length) * 100);
+  document.getElementById('quiz-score-final').textContent = `${score} / ${questions.length} (${pct}%)`;
+  let stars = '', label = '';
+  if (pct >= 90) { stars = '⭐⭐⭐⭐⭐'; label = 'Excelente! Você domina a LRF!'; }
+  else if (pct >= 70) { stars = '⭐⭐⭐⭐'; label = 'Muito bom! Continue praticando!'; }
+  else if (pct >= 50) { stars = '⭐⭐⭐'; label = 'Bom! Revise os pontos errados.'; }
+  else if (pct >= 30) { stars = '⭐⭐'; label = 'Precisa estudar mais. Revise o material!'; }
+  else { stars = '⭐'; label = 'Não desanime! Releia o material com atenção.'; }
+  document.getElementById('quiz-stars').textContent = stars;
+  document.getElementById('quiz-score-label').textContent = label;
+}
+
+function restartQuiz() {
+  currentQ = 0; score = 0;
+  document.getElementById('quiz-main').style.display = 'block';
+  document.getElementById('quiz-result').classList.remove('show');
+  loadQuestion();
+}
+
+// Init
+loadQuestion();
+
+// ===== NAV HIGHLIGHT =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 80) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+
+
+</body></html>
